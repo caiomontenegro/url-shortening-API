@@ -15,29 +15,29 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="flex flex-col text-base h-full">
 
-  <header>
-    <nav class="nav">
-      <ul class="nav__links">
-        <li><a class="nav-img" href="#" target="_self"><img src="images/logo.svg" alt="Logo"></a></li>
-        <li><a class="nav-link" href="#" target="_self">Features</a></li>
-        <li><a class="nav-link" href="#" target="_self">Pricing</a></li>
-        <li><a class="nav-link" href="#" target="_self">Resources</a></li>
+  <header class="flex justify-center w-full my-10">
+    <nav class="nav flex flex-row justify-between w-1440">
+      <ul class="nav__links flex space-x-6 items-center">
+        <li><a class="nav-img" href="#" target="_self"><img class="mr-8" src="images/logo.svg" alt="Logo"></a></li>
+        <li><a class="nav-link flex list-none font-bold cursor-pointer duration-200" href="#" target="_self">Features</a></li>
+        <li><a class="nav-link flex list-none font-bold cursor-pointer duration-200" href="#" target="_self">Pricing</a></li>
+        <li><a class="nav-link flex list-none font-bold cursor-pointer duration-200" href="#" target="_self">Resources</a></li>
       </ul>
       
-      <div class="nav__access">
-        <button class="login-button">Login</button>
-        <button class="signup-button">Sign Up</button>
+      <div class="nav__access flex space-x-6">
+        <button class="login-button text-base font-bold duration-200">Login</button>
+        <button class="signup-button py-4 px-6 text-base text-white font-bold duration-200 rounded-full">Sign Up</button>
       </div>
     </nav>
   </header>
 
   <main>
 
-    <section class="introduction">
+    <section class="introduction w-1440">
       <div>
-        <h1 class="text-pink-500 introduction__title">More than just shorter links</h1>
+        <h1 class="introduction__title">More than just shorter links</h1>
         <p class="introduction__paragraph">
           Build your brand’s recognition and get detailed insights
           on how your links are performing.

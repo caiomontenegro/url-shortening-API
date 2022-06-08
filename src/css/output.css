@@ -470,15 +470,129 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.text-pink-500{
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.mr-8{
+  margin-right: 2rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-1440{
+  width: 1440px;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.list-none{
+  list-style-type: none;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.text-white{
   --tw-text-opacity: 1;
-  color: rgb(236 72 153 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.duration-200{
+  transition-duration: 200ms;
 }
 
 * {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link {
+  color: #9e9aa7;
+}
+
+.nav-link:hover {
+  color: #35323e;
+}
+
+.login-button {
+  color: #9e9aa7;
+}
+
+.login-button:hover {
+  color: #35323e;
+}
+
+.signup-button {
+  background-color: #2acfcf;
+}
+
+.signup-button:hover {
+  background-color: #89e1e1;
 }
 
 /*# sourceMappingURL=output.css.map */
