@@ -38,3 +38,15 @@ body {
     }
 }
 
+.introduction__paragraph {
+    color: $color-grayishViolet;
+}
+
+.advertising__link {
+    background-color: $color-lightCyean;
+    
+    &:hover {
+        background-color: $color-cyean;
+    }
+}
+

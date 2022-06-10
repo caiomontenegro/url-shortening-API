@@ -33,4 +33,15 @@ body {
   background-color: #89e1e1;
 }
 
+.introduction__paragraph {
+  color: #9e9aa7;
+}
+
+.advertising__link {
+  background-color: #2acfcf;
+}
+.advertising__link:hover {
+  background-color: #89e1e1;
+}
+
 /*# sourceMappingURL=style.css.map */

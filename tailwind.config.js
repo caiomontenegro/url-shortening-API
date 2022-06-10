@@ -3,7 +3,10 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        '1440': '1440px',
+        'desktop': '1140px',
+      },
+      fontSize: {
+        'title': '5.0rem',
       },
     },
   },

@@ -18,9 +18,9 @@
 <body class="flex flex-col text-base h-full">
 
   <header class="flex justify-center w-full my-10">
-    <nav class="nav flex flex-row justify-between w-1440">
+    <nav class="nav flex flex-row justify-between w-desktop">
       <ul class="nav__links flex space-x-6 items-center">
-        <li><a class="nav-img" href="#" target="_self"><img class="mr-8" src="images/logo.svg" alt="Logo"></a></li>
+        <li><a class="nav-img" href="#" target="_self"><img class="mr-5" src="images/logo.svg" alt="Logo"></a></li>
         <li><a class="nav-link flex list-none font-bold cursor-pointer duration-200" href="#" target="_self">Features</a></li>
         <li><a class="nav-link flex list-none font-bold cursor-pointer duration-200" href="#" target="_self">Pricing</a></li>
         <li><a class="nav-link flex list-none font-bold cursor-pointer duration-200" href="#" target="_self">Resources</a></li>
@@ -28,24 +28,26 @@
       
       <div class="nav__access flex space-x-6">
         <button class="login-button text-base font-bold duration-200">Login</button>
-        <button class="signup-button py-4 px-6 text-base text-white font-bold duration-200 rounded-full">Sign Up</button>
+        <button class="signup-button py-2 px-6 text-base text-white font-bold rounded-full duration-200">Sign Up</button>
       </div>
     </nav>
   </header>
 
   <main>
 
-    <section class="introduction w-1440">
-      <div>
-        <h1 class="introduction__title">More than just shorter links</h1>
-        <p class="introduction__paragraph">
-          Build your brand’s recognition and get detailed insights
-          on how your links are performing.
-        </p>
-        <a class="advertising__link" href="#" target="_self">Get Started</a>
-      </div>
-      <div>
-        <img src="images/illustration-working.svg" alt="Person working image">
+    <section class="introduction flex justify-end w-full mt-12">
+      <div class="flex flex-row">
+        <div class="flex flex-col max-w-2xl">
+          <h1 class="introduction__title text-7xl font-bold mt-20">More than just shorter links</h1>
+          <p class="introduction__paragraph mt-4 text-xl font-medium max-w-lg">
+            Build your brand’s recognition and get detailed insights
+            on how your links are performing.
+          </p>
+          <a class="advertising__link py-2 px-6 max-w-[25%] mt-16 text-xl text-white font-bold rounded-full duration-200" href="#" target="_self">Get Started</a>
+        </div>
+        <div>
+          <img class="mr-24 ml-13" src="images/illustration-working.svg" alt="Person working image">
+        </div>
       </div>
     </section>
     
