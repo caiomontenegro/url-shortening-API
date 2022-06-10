@@ -44,4 +44,20 @@ body {
   background-color: #89e1e1;
 }
 
+.statistics {
+  background-color: #f2f2f2;
+}
+
+.form-button {
+  background-color: #2acfcf;
+}
+.form-button:hover {
+  background-color: #89e1e1;
+}
+
+.get-url {
+  background-image: url(../images/bg-shorten-desktop.svg);
+  background-color: #3b3054;
+}
+
 /*# sourceMappingURL=style.css.map */

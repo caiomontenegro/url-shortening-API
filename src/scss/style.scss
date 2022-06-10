@@ -50,3 +50,20 @@ body {
     }
 }
 
+.statistics {
+    background-color: $color-lightGray;
+}
+
+.form-button {
+    background-color: $color-lightCyean;
+    
+    &:hover {
+        background-color: $color-cyean;
+    }
+}
+
+.get-url {
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-color: $color-darkViolet;
+}
+

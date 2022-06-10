@@ -35,7 +35,7 @@
 
   <main>
 
-    <section class="introduction flex justify-end w-full mt-12">
+    <section class="introduction flex justify-end w-full mt-12 mb-36">
       <div class="flex flex-row">
         <div class="flex flex-col max-w-2xl">
           <h1 class="introduction__title text-7xl font-bold mt-20">More than just shorter links</h1>
@@ -51,14 +51,13 @@
       </div>
     </section>
     
-    <section class="get-url">
-      <form action="" class="get-url__form">
-        <input class="form-input" type="text" placeholder="Shorten a link here..."></input>
-        <button class="form-button" type="submit">Shorten It!</button>
-      </form>
-    </section>
-
-    <section class="statistics">
+    <section class="statistics flex flex-col items-center pt-52 relative">
+      <div class="get-url h-36 w-desktop flex flex-row justify-center items-center rounded-lg absolute -top-16">
+        <form action="" class="get-url__form flex justify-center w-10/12">
+          <input class="form-input h-14 w-9/12  pl-8 mr-4 rounded-lg focus:border-none" type="text" placeholder="Shorten a link here..."></input>
+          <button class="form-button py-4 px-8 rounded-lg text-white font-bold duration-200" type="submit">Shorten It!</button>
+        </form>
+      </div>
       <div class="statistics__resume">
         <h1 class="statistics__title">Advanced Statistics</h1>
         <p class="statistics__description">
