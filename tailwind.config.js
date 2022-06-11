@@ -8,6 +8,12 @@ module.exports = {
       fontSize: {
         'title': '5.0rem',
       },
+      maxWidth: {
+        'card': '22rem',
+      },
+      inset: {
+        'img-card': '15.5rem'
+      }
     },
   },
   plugins: [],

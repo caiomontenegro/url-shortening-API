@@ -33,6 +33,10 @@ body {
   background-color: #89e1e1;
 }
 
+.introduction__title {
+  color: #3b3054;
+}
+
 .introduction__paragraph {
   color: #9e9aa7;
 }
@@ -58,6 +62,32 @@ body {
 .get-url {
   background-image: url(../images/bg-shorten-desktop.svg);
   background-color: #3b3054;
+}
+
+.statistics__title {
+  color: #3b3054;
+}
+
+.statistics__description {
+  color: #9e9aa7;
+}
+
+.img-container {
+  background-color: #3b3054;
+}
+
+.benefit {
+  background-color: white;
+}
+.benefit__title {
+  color: #3b3054;
+}
+.benefit__description {
+  color: #9e9aa7;
+}
+
+.green-line {
+  border: 5px solid #2acfcf;
 }
 
 /*# sourceMappingURL=style.css.map */

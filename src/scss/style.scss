@@ -38,6 +38,10 @@ body {
     }
 }
 
+.introduction__title {
+    color: $color-darkViolet;
+}
+
 .introduction__paragraph {
     color: $color-grayishViolet;
 }
@@ -67,3 +71,30 @@ body {
     background-color: $color-darkViolet;
 }
 
+.statistics__title {
+    color: $color-darkViolet;
+}
+
+.statistics__description{
+    color: $color-grayishViolet;
+}
+
+.img-container {
+    background-color: $color-darkViolet;
+}
+
+.benefit {
+    background-color: white;
+
+    &__title {
+        color: $color-darkViolet;
+    }
+
+    &__description {
+        color: $color-grayishViolet;
+    }
+}
+
+.green-line {
+    border: 5px solid $color-lightCyean;
+}
