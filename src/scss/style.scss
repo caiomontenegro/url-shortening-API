@@ -109,3 +109,33 @@ body {
         color: white;
     }
 }
+
+footer {
+    background-color: $color-veryDarkViolet;
+}
+
+.info-group {
+
+    &__title {
+        color: white;
+    }
+
+    &__link {
+        color: $color-grayishViolet;
+
+        &:hover {
+            color: $color-lightCyean;
+        }
+    }
+}
+
+.social {
+
+    &__link {
+        color: white;
+
+        &:hover {
+            color: $color-lightCyean;
+        }
+    }
+}

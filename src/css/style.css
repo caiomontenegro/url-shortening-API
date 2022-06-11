@@ -100,4 +100,25 @@ body {
   color: white;
 }
 
+footer {
+  background-color: #232127;
+}
+
+.info-group__title {
+  color: white;
+}
+.info-group__link {
+  color: #9e9aa7;
+}
+.info-group__link:hover {
+  color: #2acfcf;
+}
+
+.social__link {
+  color: white;
+}
+.social__link:hover {
+  color: #2acfcf;
+}
+
 /*# sourceMappingURL=style.css.map */
