@@ -61,6 +61,7 @@ body {
 
 .get-url {
   background-image: url(../images/bg-shorten-desktop.svg);
+  background-size: cover;
   background-color: #3b3054;
 }
 
@@ -88,6 +89,15 @@ body {
 
 .green-line {
   border: 5px solid #2acfcf;
+}
+
+.advertising {
+  background-color: #3b3054;
+  background-image: url(../images/bg-boost-desktop.svg);
+  background-size: cover;
+}
+.advertising__title {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
