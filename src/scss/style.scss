@@ -15,19 +15,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.nav-link {
-    color: $color-grayishViolet;
-    &:hover {
-        color: $color-veryDarkBlue;
-    }
-}
-
-.login-button {
-    color: $color-grayishViolet;
-
-    &:hover {
-        color: $color-veryDarkBlue;
-    }
+.burguer-line {
+    border-color: $color-grayishViolet;
 }
 
 .signup-button {

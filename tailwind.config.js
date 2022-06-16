@@ -13,6 +13,15 @@ module.exports = {
       },
       inset: {
         'img-card': '15.5rem'
+      },
+      screens: {
+        'desk': '1160px',
+      },
+      colors: {
+        'veryDarkViolet' : 'hsl(257, 27%, 26%)',
+        'darkgGrayishViolet' : 'hsl(256, 5%, 42%)',
+        'grayishViolet' : 'hsl(257, 7%, 63%)',
+        'veryDarkBlue' : 'hsl(255, 11%, 22%)'
       }
     },
   },
