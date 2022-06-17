@@ -16,6 +16,9 @@ module.exports = {
       },
       screens: {
         'desk': '1160px',
+        'desk2': '1350px',
+        'tablet': '1560px',
+        'sTablet': '1070px'
       },
       colors: {
         'veryDarkViolet' : 'hsl(257, 27%, 26%)',
