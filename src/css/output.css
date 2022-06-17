@@ -560,6 +560,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible{
+  visibility: visible;
+}
+
 .static{
   position: static;
 }
@@ -572,8 +576,8 @@ video {
   position: relative;
 }
 
-.-top-16{
-  top: -4rem;
+.-top-24{
+  top: -6rem;
 }
 
 .top-\[650px\]{
@@ -672,8 +676,8 @@ video {
   height: 100%;
 }
 
-.h-44{
-  height: 11rem;
+.h-52{
+  height: 13rem;
 }
 
 .h-14{
@@ -777,10 +781,10 @@ video {
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]){
+.space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-20 > :not([hidden]) ~ :not([hidden]){
@@ -962,6 +966,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .duration-200{
   transition-duration: 200ms;
 }
@@ -1008,12 +1017,32 @@ body {
   background-color: #f2f2f2;
 }
 
+.js-error-link {
+  border: 3px solid red;
+}
+
+.js-error-link ::-moz-placeholder {
+  color: red;
+}
+
+.js-error-link :-ms-input-placeholder {
+  color: red;
+}
+
+.js-error-link ::placeholder {
+  color: red;
+}
+
 .form-button {
   background-color: #2acfcf;
 }
 
 .form-button:hover {
   background-color: #89e1e1;
+}
+
+.empty-form {
+  color: red;
 }
 
 .get-url {
@@ -1084,10 +1113,6 @@ footer {
   color: #2acfcf;
 }
 
-.focus\:border-none:focus{
-  border-style: none;
-}
-
 @media (min-width: 1160px){
   .desk\:right-36{
     right: 9rem;
@@ -1111,6 +1136,30 @@ footer {
 
   .desk\:right-img-card{
     right: 15.5rem;
+  }
+
+  .desk\:-top-16{
+    top: -4rem;
+  }
+
+  .desk\:-top-14{
+    top: -3.5rem;
+  }
+
+  .desk\:-top-20{
+    top: -5rem;
+  }
+
+  .desk\:-top-4{
+    top: -1rem;
+  }
+
+  .desk\:-top-5{
+    top: -1.25rem;
+  }
+
+  .desk\:-top-0{
+    top: -0px;
   }
 
   .desk\:mb-10{

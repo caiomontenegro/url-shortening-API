@@ -47,12 +47,24 @@ body {
     background-color: $color-lightGray;
 }
 
+.js-error-link {
+    border: 3px solid red;
+
+    ::placeholder { 
+       color: red;
+    }
+}
+
 .form-button {
     background-color: $color-lightCyean;
     
     &:hover {
         background-color: $color-cyean;
     }
+}
+
+.empty-form {
+    color: red;
 }
 
 .get-url {

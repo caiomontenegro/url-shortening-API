@@ -29,8 +29,8 @@
           <li><a class="nav-link flex list-none font-bold text-xl desk:text-base text-white desk:text-grayishViolet desk:hover:text-veryDarkBlue  cursor-pointer duration-200" href="#" target="_self">Pricing</a></li>
           <li><a class="nav-link flex list-none font-bold text-xl desk:text-base text-white desk:text-grayishViolet desk:hover:text-veryDarkBlue  cursor-pointer duration-200" href="#" target="_self">Resources</a></li>
         </ul>
-        <div class="grayLine border border-solid border-b-darkgGrayishViolet desk:border-0 w-11/12 mb-8" ></div>
-        <div class="nav__access flex flex-col desk:flex-row space-y-8 desk:space-y-0 desk:space-x-6 w-11/12 desk:w-auto">
+        <div class="grayLine border border-solid border-b-darkgGrayishViolet desk:border-0  m-auto w-11/12 mb-8" ></div>
+        <div class="nav__access flex flex-col desk:flex-row  m-auto space-y-8 desk:space-y-0 desk:space-x-6 w-11/12 desk:w-auto">
           <button class="login-button text-base font-bold text-xl desk:text-base text-white desk:text-grayishViolet desk:hover:text-veryDarkBlue duration-200">Login</button>
           <button class="signup-button py-2 px-6 w-full desk:w-32 text-xl desk:text-base text-white font-bold rounded-full duration-200">Sign Up</button>
         </div>
@@ -57,10 +57,11 @@
     </section>
     
     <section class="statistics flex flex-col items-center w-full pt-52 pb-40 relative">
-      <div class="get-url h-44 desk:h-36 w-11/12 desk:w-desktop flex flex-row justify-center items-center rounded-lg absolute -top-16">
-        <form action="" class="get-url__form flex flex-col desk:flex-row justify-center space-y-4 desk:space-y-0 w-10/12">
-          <input class="form-input h-14 desk:w-9/12  pl-8 desk:mr-4 rounded-lg focus:border-none" type="text" placeholder="Shorten a link here..."></input>
-          <button class="form-button py-4 px-8 rounded-lg text-white font-bold duration-200" type="submit">Shorten It!</button>
+      <div class="get-url h-52 desk:h-36 w-11/12 desk:w-desktop flex flex-row justify-center items-center rounded-lg absolute -top-24 desk:-top-16">
+        <form action="" class="get-url__form flex flex-col desk:flex-row justify-center space-y-2 desk:space-y-0 w-10/12">
+          <input class="form-input h-14 desk:w-9/12  pl-8 desk:mr-4 rounded-lg text-xl desk:text-base" type="text" placeholder="Shorten a link here..."></input>
+          <em class="empty-form js-empty-form text-red-500"></em>
+          <button class="form-button py-4 px-8 rounded-lg text-white text-2xl desk:text-base font-bold duration-200" type="submit">Shorten It!</button>
         </form>
       </div>
       <div class="statistics__resume flex flex-col w-11/12 desk:w-auto items-center max-w-lg">
