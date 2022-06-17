@@ -596,10 +596,6 @@ video {
   margin: auto;
 }
 
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-
 .mt-6{
   margin-top: 1.5rem;
 }
@@ -652,6 +648,10 @@ video {
   margin-top: 8rem;
 }
 
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
 .mb-20{
   margin-bottom: 5rem;
 }
@@ -682,10 +682,6 @@ video {
 
 .h-1\/2{
   height: 50%;
-}
-
-.h-80{
-  height: 20rem;
 }
 
 .h-28{
@@ -1093,24 +1089,20 @@ footer {
 }
 
 @media (min-width: 1160px){
-  .desk\:absolute{
-    position: absolute;
+  .desk\:right-36{
+    right: 9rem;
   }
 
-  .desk\:right-5{
-    right: 1.25rem;
-  }
-
-  .desk\:top-52{
-    top: 13rem;
+  .desk\:top-28{
+    top: 7rem;
   }
 
   .desk\:top-\[580px\]{
     top: 580px;
   }
 
-  .desk\:right-\[440px\]{
-    right: 440px;
+  .desk\:right-\[350px\]{
+    right: 350px;
   }
 
   .desk\:-top-10{
@@ -1121,8 +1113,8 @@ footer {
     right: 15.5rem;
   }
 
-  .desk\:top-28{
-    top: 7rem;
+  .desk\:mb-10{
+    margin-bottom: 2.5rem;
   }
 
   .desk\:mb-0{
@@ -1147,10 +1139,6 @@ footer {
 
   .desk\:mt-48{
     margin-top: 12rem;
-  }
-
-  .desk\:mb-10{
-    margin-bottom: 2.5rem;
   }
 
   .desk\:flex{
@@ -1310,7 +1298,7 @@ footer {
   }
 }
 
-@media (min-width: 1350px){
+@media (min-width: 1600px){
   .desk2\:absolute{
     position: absolute;
   }
@@ -1320,27 +1308,13 @@ footer {
   }
 }
 
-@media (min-width: 1560px){
-  .tablet\:order-2{
-    order: 2;
-  }
-}
-
 @media (min-width: 1070px){
-  .sTablet\:mt-4{
-    margin-top: 1rem;
+  .sTablet\:mb-4{
+    margin-bottom: 1rem;
   }
 
   .sTablet\:mt-0{
     margin-top: 0px;
-  }
-
-  .sTablet\:mt-2{
-    margin-top: 0.5rem;
-  }
-
-  .sTablet\:mb-4{
-    margin-bottom: 1rem;
   }
 
   .sTablet\:flex-row{
