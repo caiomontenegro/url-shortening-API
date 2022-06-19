@@ -61,14 +61,18 @@ function shortening() {
     })
 }
 
+const copyContent = document.querySelector('.copy-content')
+
 function copy() {
     const buttonCopy = document.querySelectorAll('.copy')
     for(let i = 0; i in buttonCopy; i++) {
         buttonCopy[i].addEventListener('click', () => {
+            copyContent.innerHTML = newUrlList[i]
             console.log(newUrlList[i])
         })
     }
 }
+
 
 function writeComponent() {
     linkContainer.unshift(`<div class="short-links flex flex-col desk:flex-row items-center p-4 w-full h-52 desk:h-24 bg-white rounded-lg">

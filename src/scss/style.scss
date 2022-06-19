@@ -97,6 +97,12 @@ body {
     border-color: $color-lightGray;
 }
 
+.copy {
+    &:focus {
+        background-color: $color-darkViolet;
+    }
+}
+
 .statistics__title {
     color: $color-darkViolet;
 }

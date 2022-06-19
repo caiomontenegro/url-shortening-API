@@ -89,6 +89,10 @@ body {
   border-color: #f2f2f2;
 }
 
+.copy:focus {
+  background-color: #3b3054;
+}
+
 .statistics__title {
   color: #3b3054;
 }
