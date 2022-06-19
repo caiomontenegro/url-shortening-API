@@ -55,14 +55,28 @@ function shortening() {
         newUrlList.unshift(newUrl)
         oldUrlList.unshift(input.value)
         popLists()
-        linkContainer.unshift(`<div class="short-links flex flex-col desk:flex-row items-center p-4 w-full h-52 desk:h-24 bg-white rounded-lg">
-        <div class="old-link inline-block whitespace-nowrap text-ellipsis overflow-hidden w-11/12 h-14 pt-3.5 text-xl desk:ml-6">${oldUrlList[0]}</div>
-        <div class="short-line w-full border border-solid desk:hidden"></div>
-        <div class="new-link flex items-center desk:justify-end desk:mr-6 w-11/12 h-14 text-xl">${newUrlList[0]}</div>
-        <button class="copy w-11/12 desk:w-72 h-14 text-white text-2xl font-bold rounded-lg">Copy</button>
-        </div>`)
-        linkContainers.innerHTML = linkContainer
+        writeComponent()
+        linkContainers.innerHTML = linkContainer.join('')
+        copy()
     })
+}
+
+function copy() {
+    const buttonCopy = document.querySelectorAll('.copy')
+    for(let i = 0; i in buttonCopy; i++) {
+        buttonCopy[i].addEventListener('click', () => {
+            console.log(newUrlList[i])
+        })
+    }
+}
+
+function writeComponent() {
+    linkContainer.unshift(`<div class="short-links flex flex-col desk:flex-row items-center p-4 w-full h-52 desk:h-24 bg-white rounded-lg">
+    <div class="old-link inline-block whitespace-nowrap text-ellipsis overflow-hidden w-11/12 h-14 pt-3.5 text-xl desk:ml-6">${oldUrlList[0]}</div>
+    <div class="short-line w-full border border-solid desk:hidden"></div>
+    <div class="new-link flex items-center desk:justify-end desk:mr-6 w-11/12 h-14 text-xl">${newUrlList[0]}</div>
+    <button class="copy w-11/12 desk:w-72 h-14 text-white text-2xl font-bold rounded-lg">Copy</button>
+    </div>`)
 }
 
 function popLists() {
@@ -76,3 +90,5 @@ function popLists() {
         linkContainer.pop()
     }
 }
+
+
