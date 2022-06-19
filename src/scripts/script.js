@@ -16,6 +16,7 @@ function navAccess() {
 
 const input = document.querySelector('.form-input')
 const submitButton = document.querySelector('.form-button')
+const linkContainers = document.querySelector('.js-short')
 
 submitButton.addEventListener('click', sendLink)
 
@@ -25,22 +26,24 @@ function sendLink() {
     event.preventDefault()
 }
 
+
 const errorMessage = document.querySelector('.js-empty-form')
 
 function checkLink() {
     if (input.value === '') {
-        console.log('Sem link')
         input.classList.add('js-error-link')
         errorMessage.innerHTML='Please add a link'
         return
     }
     input.classList.remove('js-error-link')
     errorMessage.innerHTML=''
-    console.log(input.value)
 }
 
-const apiUrl = 'https://api.shrtco.de/v2/shorten?url='
 
+const apiUrl = 'https://api.shrtco.de/v2/shorten?url='
+let newUrlList = []
+let oldUrlList = []
+let linkContainer = []
 
 function shortening() {
     fetch(`${apiUrl}${input.value}`)
@@ -48,6 +51,28 @@ function shortening() {
         return response.json()
     })
     .then(jsonBody => {
-        console.log(jsonBody)
+        let newUrl = jsonBody.result.full_short_link
+        newUrlList.unshift(newUrl)
+        oldUrlList.unshift(input.value)
+        popLists()
+        linkContainer.unshift(`<div class="short-links flex flex-col desk:flex-row items-center p-4 w-full h-52 desk:h-24 bg-white rounded-lg">
+        <div class="old-link inline-block whitespace-nowrap text-ellipsis overflow-hidden w-11/12 h-14 pt-3.5 text-xl desk:ml-6">${oldUrlList[0]}</div>
+        <div class="short-line w-full border border-solid desk:hidden"></div>
+        <div class="new-link flex items-center desk:justify-end desk:mr-6 w-11/12 h-14 text-xl">${newUrlList[0]}</div>
+        <button class="copy w-11/12 desk:w-72 h-14 text-white text-2xl font-bold rounded-lg">Copy</button>
+        </div>`)
+        linkContainers.innerHTML = linkContainer
     })
+}
+
+function popLists() {
+    if(newUrlList.length > 2) {
+        newUrlList.pop()
+    }
+    if(oldUrlList.length > 2) {
+        oldUrlList.pop()
+    }
+    if(linkContainer.length > 2) {
+        linkContainer.pop()
+    }
 }

@@ -29,7 +29,7 @@
           <li><a class="nav-link flex list-none font-bold text-xl desk:text-base text-white desk:text-grayishViolet desk:hover:text-veryDarkBlue  cursor-pointer duration-200" href="#" target="_self">Pricing</a></li>
           <li><a class="nav-link flex list-none font-bold text-xl desk:text-base text-white desk:text-grayishViolet desk:hover:text-veryDarkBlue  cursor-pointer duration-200" href="#" target="_self">Resources</a></li>
         </ul>
-        <div class="grayLine border border-solid border-b-darkgGrayishViolet desk:border-0  m-auto w-11/12 mb-8" ></div>
+        <div class="gray-line border border-solid desk:border-0  m-auto w-11/12 mb-8" ></div>
         <div class="nav__access flex flex-col desk:flex-row  m-auto space-y-8 desk:space-y-0 desk:space-x-6 w-11/12 desk:w-auto">
           <button class="login-button text-base font-bold text-xl desk:text-base text-white desk:text-grayishViolet desk:hover:text-veryDarkBlue duration-200">Login</button>
           <button class="signup-button py-2 px-6 w-full desk:w-32 text-xl desk:text-base text-white font-bold rounded-full duration-200">Sign Up</button>
@@ -56,23 +56,31 @@
       </div>
     </section>
     
-    <section class="statistics flex flex-col items-center w-full pt-52 pb-40 relative">
+    <section class="statistics flex flex-col items-center w-full pt-20 pb-40 relative">
       <div class="get-url h-52 desk:h-36 w-11/12 desk:w-desktop flex flex-row justify-center items-center rounded-lg absolute -top-24 desk:-top-16">
         <form action="" class="get-url__form flex flex-col desk:flex-row justify-center space-y-2 desk:space-y-0 w-10/12">
-          <input class="form-input h-14 desk:w-9/12  pl-8 desk:mr-4 rounded-lg text-xl desk:text-base" type="text" placeholder="Shorten a link here..."></input>
+          <input class="form-input h-14 desk:w-9/12  pl-8 desk:mr-4 rounded-lg text-ellipsis text-xl desk:text-base" type="text" placeholder="Shorten a link here..."></input>
           <em class="empty-form js-empty-form text-red-500"></em>
           <button class="form-button py-4 px-8 rounded-lg text-white text-2xl desk:text-base font-bold duration-200" type="submit">Shorten It!</button>
         </form>
       </div>
-      <div class="statistics__resume flex flex-col w-11/12 desk:w-auto items-center max-w-lg">
+      <div class="short js-short flex flex-col item-center py-4 mt-16 w-11/12 desk:w-desktop space-y-8">
+        <!-- <div class="short-links flex flex-col desk:flex-row items-center p-4 w-full h-52 desk:h-24 bg-white rounded-lg overflow-hidden">
+          <div class="old-link flex whitespace-nowrap items-center w-11/12 h-14 text-xl desk:ml-6">${oldUrlList[0]}</div>
+          <div class="short-line w-full border border-solid desk:hidden"></div>
+          <div class="new-link flex items-center desk:justify-end desk:mr-6 w-11/12 h-14 text-xl">${newUrlList[0]}</div>
+          <button class="copy w-11/12 desk:w-72 h-14 text-white text-2xl font-bold rounded-lg">Copy</button>
+        </div> -->
+      </div>
+      <div class="statistics__resume flex flex-col w-11/12 desk:w-auto mt-36 items-center max-w-lg">
         <h1 class="statistics__title text-4xl font-bold">Advanced Statistics</h1>
         <p class="statistics__description text-center w-10/12 desk:w-auto text-lg mt-4">
           Track how your links are performing across the web with our
           advanced statistics dashboard.
         <p>
       </div>
-      <div class="statistics__benefits flex flex-col desk:flex-row justify-between items-center desk:items-stretch w-full desk:w-desktop">
-        <div class="green-line h-1/2 desk:h-0 desk:w-2/4 border-solid border-8 absolute top-[650px] desk:top-[580px] desk:right-[350px]"></div>
+      <div class="statistics__benefits flex flex-col desk:flex-row justify-between items-center desk:items-stretch w-full desk:w-desktop relative">
+        <div class="green-line h-1/2 desk:h-0 desk:w-2/4 border-solid border-8 absolute top-[400px] desk:top-[260px] desk:right-[290px]"></div>
         <div class="benefit flex flex-col items-center desk:items-start w-11/12 desk:w-[22rem] mt-32 desk:mt-24 pt-20 px-8 pb-6 desk:h-72 rounded-md relative">
           <div class="img-container flex justify-center items-center px-2 py-2 h-28 w-28 desk:h-20 desk:w-20 rounded-full absolute -top-14 desk:-top-10 right-1/2 translate-x-1/2 desk:translate-x-0 desk:right-img-card">
             <img class="benefit__img w-14 desk:w-auto" src="images/icon-brand-recognition.svg" alt="Benefit image">

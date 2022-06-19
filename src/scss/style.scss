@@ -19,7 +19,19 @@ body {
     border-color: $color-grayishViolet;
 }
 
+.gray-line {
+    border-color: $color-grayishViolet;
+}
+
 .signup-button {
+    background-color: $color-lightCyean;
+
+    &:hover {
+        background-color: $color-cyean;
+    }
+}
+
+.copy {
     background-color: $color-lightCyean;
 
     &:hover {
@@ -71,6 +83,18 @@ body {
     background-image: url(../images/bg-shorten-desktop.svg);
     background-size: cover;
     background-color: $color-darkViolet;
+}
+
+.old-link {
+    text-overflow: ellipsis;
+}
+
+.new-link {
+    color: $color-lightCyean;
+}
+
+.short-line {
+    border-color: $color-lightGray;
 }
 
 .statistics__title {

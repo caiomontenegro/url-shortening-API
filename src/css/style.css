@@ -16,10 +16,21 @@ body {
   border-color: #9e9aa7;
 }
 
+.gray-line {
+  border-color: #9e9aa7;
+}
+
 .signup-button {
   background-color: #2acfcf;
 }
 .signup-button:hover {
+  background-color: #89e1e1;
+}
+
+.copy {
+  background-color: #2acfcf;
+}
+.copy:hover {
   background-color: #89e1e1;
 }
 
@@ -64,6 +75,18 @@ body {
   background-image: url(../images/bg-shorten-desktop.svg);
   background-size: cover;
   background-color: #3b3054;
+}
+
+.old-link {
+  text-overflow: ellipsis;
+}
+
+.new-link {
+  color: #2acfcf;
+}
+
+.short-line {
+  border-color: #f2f2f2;
 }
 
 .statistics__title {
