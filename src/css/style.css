@@ -13,6 +13,7 @@ body {
 }
 
 .burguer-line {
+  border-bottom: 5px solid;
   border-color: #9e9aa7;
 }
 
@@ -93,6 +94,10 @@ body {
   background-color: #3b3054;
 }
 
+.copy-content {
+  color: #f2f2f2;
+}
+
 .statistics__title {
   color: #3b3054;
 }
@@ -116,7 +121,8 @@ body {
 }
 
 .green-line {
-  border: 5px solid #2acfcf;
+  border-bottom: 9px solid #2acfcf;
+  border-color: #2acfcf;
 }
 
 .advertising {

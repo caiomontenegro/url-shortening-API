@@ -16,6 +16,7 @@ body {
 }
 
 .burguer-line {
+    border-bottom: 5px solid;
     border-color: $color-grayishViolet;
 }
 
@@ -62,7 +63,7 @@ body {
 .js-error-link {
     border: 3px solid red;
 
-    ::placeholder { 
+    ::placeholder {
        color: red;
     }
 }
@@ -103,6 +104,10 @@ body {
     }
 }
 
+.copy-content {
+    color: $color-lightGray;
+}
+
 .statistics__title {
     color: $color-darkViolet;
 }
@@ -128,7 +133,8 @@ body {
 }
 
 .green-line {
-    border: 5px solid $color-lightCyean;
+    border-bottom: 9px solid $color-lightCyean;
+    border-color: $color-lightCyean;
 }
 
 .advertising {

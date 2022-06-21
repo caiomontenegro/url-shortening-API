@@ -21,9 +21,11 @@ const linkContainers = document.querySelector('.js-short')
 submitButton.addEventListener('click', sendLink)
 
 function sendLink() {
-    checkLink()
-    shortening()
     event.preventDefault()
+    if (checkLink() === false) {
+        return
+    }
+    shortening()
 }
 
 
@@ -33,10 +35,19 @@ function checkLink() {
     if (input.value === '') {
         input.classList.add('js-error-link')
         errorMessage.innerHTML='Please add a link'
-        return
-    }
+        return false
+    } else if (input.value.includes(' ') === true) {
+        input.classList.add('js-error-link')
+        errorMessage.innerHTML='This is a incorrect link'
+        return false
+    } else if (input.value.length <= 24) {
+        input.classList.add('js-error-link')
+        errorMessage.innerHTML='This is a very short link'
+        return false
+    } else {
     input.classList.remove('js-error-link')
     errorMessage.innerHTML=''
+    }
 }
 
 
@@ -59,16 +70,21 @@ function shortening() {
         linkContainers.innerHTML = linkContainer.join('')
         copy()
     })
+    .catch(() => {
+        input.classList.add('js-error-link')
+        errorMessage.innerHTML='This is a invalid link'
+    })
 }
 
-const copyContent = document.querySelector('.copy-content')
+const copyContent = document.querySelector('#js-copy-content')
 
 function copy() {
     const buttonCopy = document.querySelectorAll('.copy')
     for(let i = 0; i in buttonCopy; i++) {
         buttonCopy[i].addEventListener('click', () => {
             copyContent.innerHTML = newUrlList[i]
-            console.log(newUrlList[i])
+            let linkCopied = copyContent.innerText
+            navigator.clipboard.writeText(linkCopied)
         })
     }
 }
